@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+
+/* 메인 배너 영역 -------------------------------------------*/
+#mainbanner {
+  /* background-image: url('../img/StoreFiles_WebsiteImage_F.png'); */
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+#mainbanner .inner {
+  position: relative;
+  width: 1320px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#mainbanner .maintext {
+  padding-top: 330px;
+  padding-bottom: 400px;
+  padding-left: 150px;
+}
+
+#mainbanner .maintext p {
+  text-align: right;
+  float: right;
+  font-size: 50px;
+  color: #fff;
+}
+#mainbanner .maintext p.maintitle {
+  line-height: 60px;
+}
+#mainbanner .maintext p.subtitle {
+  line-height: 26px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 20px;
+}
+/* #mainbanner .maintext p.subtitle + .common-btn,
+#mainbanner .maintext p.subtitle + .common-btn + .common-btn {
+  margin-top: 80px;
+  border: 3px solid #f9f9f9;
+  color: #f9f9f9;
+} */
+
+
+#container #zero h2 {
+  font-size: 45px;
+  text-align: center;
+  color: #333;
+  margin-top: 220px;
+
+}
+
+
+/*영번째 섹션------------------------------------------*/
+#flex-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 500px;
+  padding-bottom: 150px;
+}
+#flex-items > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-basis: 224px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 80px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+  background-color: #333;
+  margin: 10px;
+  padding: 10px;
+}
+
+#flex-items > div:nth-child(1) {
+  height: 400px;
+}
+#flex-items > div:nth-child(2) {
+  height: 350px;
+}
+#flex-items > div:nth-child(3) {
+  height: 450px;
+}
+#flex-items > div:nth-child(4) {
+  height: 400px;
+}
+#flex-items > div:nth-child(5) {
+  height: 250px;
+}
+
+#flex-items.align-items {
+  align-items: flex-end;
+}
+
+
+/* section 공통부분------------------------------------------- */
+#container section .inner {
+  width: 1320px;
+  min-height: 650px;
+  margin:  0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+#container section:nth-child(even) {
+  background: #f9f9f9;
+}
+#container section:nth-of-type(1) .inner {
+  padding-top: 150px;
+  min-height: 485px;
+}
+#container section:nth-of-type(2) .inner {
+  padding-top: 100px;
+  padding-bottom: 1px;
+  min-height: 600px;
+}
+
+/* section 공통요소 style*/
+#container section .inner h2 {
+  font-size: 45px;
+  line-height: 1;
+  color: #333;
+  margin-top: 120px;
+}
+#container section .inner .subtitle {
+  margin-top: 22px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #666666;
+}
+
+/* section 첫번째----------------------------------------------- */
+#container section .inner .box-wrap {
+  /* background: red; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container section .inner .box-wrap li {
+  float: left;
+  padding: 80px 110px;
+  /* background: yellow; */
+}
+#container section .inner .box-wrap li .items {
+  content: ''; /*수정하고싶은것1: 이건 뭐지? 여기서 뭐슨 역할을 하고있지?*/
+  /* width: 290px;
+  height: 290px; */
+  border-radius: 20%;
+  border: 5px solid #333;
+  box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+  background-size: 100%;
+}
+#container section .inner .box-wrap li .items .img {
+  width: 200px;
+  height: 200px;
+  padding: 40px;
+}
+#container section .inner .box-wrap li .items .img-text {
+  padding-top: 10%;
+}
+#container section .inner .box-wrap h3 {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+}
+
+#container section .inner .box-wrap li p {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  line-height: normal;
+}
+#container section .inner .box-wrap li p:nth-of-type(2) {
+  margin-bottom: 200px;
+}
+
+/* section 두번째------------------------------------------- */
+#container section .inner .thumb-img-wrap {
+  text-align: center;
+}
+#container section .inner .thumb-img-wrap ul {
+  overflow: hidden;
+  /* display: inline-block; */
+  margin-top: 50px;
+  height: 250px;
+  position: relative;
+}
+#container section .inner .thumb-img-wrap ul li {
+  float: left;
+  padding-top: 30px;
+  width: calc( 100% / 6 );
+  animation-name: big;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+@keyframes big {
+  0% { opacity: 0; transform: scale(0.0); }
+  100% { opacity: 1; transform: scale(1.0); }
+}
+#container section .inner .thumb-img-wrap ul li:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+#container section .inner .thumb-img-wrap ul li img {
+  width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+/**/

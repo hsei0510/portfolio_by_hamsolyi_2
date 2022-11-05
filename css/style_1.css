@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* 메인 배너 영역 -------------------------------------------*/
+#mainbanner {
+  /* background-image: url('../img/StoreFiles_WebsiteImage_F.png'); */
+  background-color: #347f92;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+#mainbanner .inner {
+  position: relative;
+  width: 1320px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#mainbanner .maintext {
+  padding-top: 330px;
+  padding-bottom: 400px;
+  padding-left: 150px;
+}
+
+#mainbanner .maintext p {
+  text-align: right;
+  float: right;
+  font-size: 50px;
+  color: #fff;
+}
+#mainbanner .maintext p.maintitle {
+  line-height: 60px;
+}
+#mainbanner .maintext p.subtitle {
+  line-height: 26px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 20px;
+}
+/* #mainbanner .maintext p.subtitle + .common-btn,
+#mainbanner .maintext p.subtitle + .common-btn + .common-btn {
+  margin-top: 80px;
+  border: 3px solid #f9f9f9;
+  color: #f9f9f9;
+} */
+
+
+
+/* section 공통부분------------------------------------------- */
+#container section .inner {
+  width: 1320px;
+  min-height: 650px;
+  margin:  0 auto;
+  /* text-align: center; */
+  padding-left: 30px;
+  overflow: hidden;
+}
+#container section:nth-child(even) {
+  background: #f3f7f9;
+}
+#container section:nth-of-type(1) .inner {
+  padding-top: 150px;
+  min-height: 485px;
+}
+#container section:nth-of-type(2) .inner {
+  padding-top: 100px;
+  padding-bottom: 1px;
+  min-height: 600px;
+}
+
+#container section .inner h2 {
+  font-size: 45px;
+  line-height: 1;
+  color: #333;
+}
+
+
+
+/* section 첫번째 ----------------------------------------------- */
+#container section .inner .box-wrap {
+  /* background: red; */
+  height: auto;
+}
+#container section .inner .box-wrap img {
+  padding: 150px 0px;
+  margin: 150px;
+  /* background-color: yellow; */
+}
+#container section .inner .box-wrap img#profile {
+box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+}
+
+
+
+/* section 두번째 ----------------------------------------------- */
+#container section .inner h3 {
+  font-size: 30px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+#container section .inner .text-box .subtitle p {
+  padding-bottom: 40px;
+}
+
+#container section .inner .text-box:nth-of-type(5) .subtitle p {
+  padding-bottom: 100px;
+}
+
+#container section .inner .subtitle {
+  margin-top: 22px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #666666;
+}
+
+
+
+/* section 세번째 ----------------------------------------------- */
+#container section:last-child .inner #flex-items {
+  padding-left: 0;
+}
+
+#third .inner h6 {
+  padding-top: 100px;
+}
+
+#third .inner .text-box:last-child {
+  padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+/**/

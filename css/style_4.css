@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* { margin: 0; padding: 0; }
+html,body { height: 100%; }
+body {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  background-color: #d9d9d9;
+  transition: background-color 1s ease;
+  font-family: 'Noto Sans KR', sans-serif;
+  /* min-width: 1320px; */
+  /* color: #666666; */
+}
+ul,ol { list-style: none; }
+a { color: #666666; text-decoration: none;}
+img { border: 0; }
+h1,h2,h3,h4,h5,h6 { line-height: 1; }
+
+
+
+#go-to-top {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 15px;
+  bottom: 15px;
+  border: 1px solid none;
+  border-radius: 20px;
+  /* border-radius: 50%; */
+  z-index: 500;
+  overflow: hidden;
+}
+
+#go-to-top a {
+  opacity: 0.5;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/go_to_top2.png');
+  background-position: center center;
+  background-color: rgha(255,255,255,0.4);
+  /*background-color: #ffffff; white rgha(255,255,255,1)*/
+}
+
+
+/* wrap 영역---------------------------------------------------- */
+.btn {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  /* color: #c8392b; */
+  text-transform: uppercase;
+  padding: 0 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+br + .btn {
+  margin-top: 20px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  min-width: 680px;
+  z-index: 10;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 70px;
+  padding: 0 25px;
+}
+
+nav li a {
+  color: #757575;
+  text-transform: uppercase;
+}
+
+.slide{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide .inside {
+  /* transition: 2s ease; active class 사용시*/
+  transition: .5s ease;
+  opacity: 0;
+  transform: scale(1.5);
+  /* margin-left: -100px; */
+}
+
+.slide.on .inside {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slide:nth-child(1) .inside {
+  opacity: 1;
+  transform: scale(1);
+  /* margin-left: 0px; */
+}
+
+/* .slide.active .inside {
+  opacity: 1;
+  margin-left: 0px;
+} */
+
+
+.slide .inside .items h2 {
+  font-size: 24px;
+}
+
+
+
+
+/* footer 영역---------------------------------------------------- */
+#footer {  background-color: #999; }
+#footer .inner {
+  position: relative;
+  width: 1320px;
+  height: 200px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+#footer .inner .f-box {
+  float: left;
+  padding-left: 30px;
+}
+
+
+#footer .inner .f-box ul { overflow: hidden; }
+#footer .inner .f-box ul li {
+  float: left;
+  height: 20px;
+  margin-right: 40px;
+ }
+ #footer .inner .f-box ul li:last-child {
+   margin-right: 0;
+ }
+ #footer .inner .f-box ul li a {
+   line-height: 20px;
+   color: #fff;
+  }
+  #footer .inner .f-box .tel {
+    float: left;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-right: 17px;
+    line-height: 16px;
+    color: #fff;
+  }
+#footer .inner .f-box .tel-first  {
+  margin-top: 18px;
+}
+#footer .inner .f-box .copyright {
+  margin-top: 80px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  }
+
+
+#familysite {
+  position: absolute;
+  width: 190px;
+  height: 30px;
+  top: 40px;
+  right: 20px;
+  border: 1px solid #d1d1d1;
+  color: #333;
+  outline: none;
+  appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 15px;
+  padding-left:  15px;
+  background-image: url('../img/select_box_arrow.png');
+  background-repeat: no-repeat;
+  /* background-position: right center; */
+  background-position: calc( 100% - 15px ) center;
+}
+select::-ms-expand {  display: none; }
+#familysite:focus {
+  border: 1px solid #999;
+  background-image: url('../img/select_box_arrow_focus.png');
+}
